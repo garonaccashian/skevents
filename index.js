@@ -55,7 +55,7 @@ app.post('/admin/login', async (req, res) => {
 
 mongoose.connect("mongodb+srv://garonaccashian:Garonaccashian1997@cluster0.1oess.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>console.log("connected to Mongodb")).catch(error=> console.log("connection error",error));
 app.use("/auth",routes);
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT || 9000,()=>{
     console.log("server running");
 });
 
