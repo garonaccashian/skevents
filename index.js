@@ -8,7 +8,7 @@ const jwt=require("jsonwebtoken");
 const app=express();
 dotenv.config();
 app.use(cors({
-    origin: 'https://skevents-e8718.web.app', // 👈 Allow requests from your frontend
+    origin: 'https://skevents-e8718.web.app','https://skevents.co' // 👈 Allow requests from your frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true // optional, only if you send cookies or auth headers
   }));
